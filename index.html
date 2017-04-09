@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Sklep warzywno-owocowy</title>
+   <!-- Latest compiled and minified Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css"> </head>
+   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+   
+
+<body ng-app="basket">
+  
+   <div class="container" ng-controller="basketController">
+      <div class="row">
+         <div class="col-sm-8 center-block">
+            <h1 class="pagetitle text-center">Sklep Krzeszowoc</span><img class="shoplogo" src="logo.svg" alt="Logo sklepu"></h1>
+            
+            
+            <br>
+            <div class="row">
+              
+               <div class="col-xs-6">
+                  <div class="input-group searchpage"> <span class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>   </span>
+                     <input type="text" class="form-control glyphicon glyphicon-shopping-cart" placeholder="Wyszukaj" ng-model="wyszukiwarka"> </div>
+               </div>
+               
+               <div class="col-xs-6">
+                  <div class="cart">
+                     <button type="button" class="btn btn-primary pull-right basket" data-toggle="modal" data-target="#myModal"> <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>  {{myCart.length}}  </button>
+                  </div>
+                  
+                  <!-- okienko modalne -->
+                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                     <div class="modal-dialog">
+                        <div class="modal-content">
+                           <h1 class="text-center">Podsumowanie</h1>
+                           <div class="modal-body">
+                              <div class="table-responsive">
+                                 <table class="table table-hover">
+                                    <thead>
+                                       <tr>
+                                          <th ng-repeat="tytul in [
+                                                             'Nazwa',
+                                                             'Cena',
+                                                             'Ilość [kg]',
+                                                             'Suma'
+                                                         ]"> {{tytul}} </th>
+                                       </tr>
+                                    </thead>
+                                    
+                                    <tbody>
+                                       <tr ng-repeat="naglowek in myCart">
+                                          <td>{{naglowek.name}}</td>
+                                          <td>{{naglowek.price}}</td>
+                                          <td>{{naglowek.amountOfOrder}}</td>
+                                          <td>{{naglowek.amountOfOrder*naglowek.price}}</td>
+                                          <td>
+                                             <button ng-click="deleteFromBasket(naglowek.id)" class="btn btn-danger btn-xs">Usuń</button>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                           <div class="modal-footer">
+                              <p class="text-left totalprice">Cena łączna: {{totalPrice}}</p>
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Wróć</button>
+                              <button ng-click="removeAll()" type="button" class="btn btn-danger">Wyczyść</button>
+                              <button type="button" class="btn btn-primary">Złóź zamówienie</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <br>
+            
+            <div class="table-responsive">
+               <table class="table table-hover">
+                  <thead>
+                     <tr>
+                        <th ng-repeat="naglowek in [
+										'Nr' , 'Nazwa' , 'Pochodzenie' , 'Cena' , 'Dostępna ilość [kg]' , 'Dodaj [kg]',
+									]"> {{naglowek}} </th>
+                     </tr>
+                  </thead>
+                  
+                  <tbody>
+                     <tr ng-repeat="produkt in produkty | filter : wyszukiwarka">
+                        <td>{{produkt.id}}</td>
+                        <td>{{produkt.name}}</td>
+                        <td>{{produkt.country}}</td>
+                        <td>{{produkt.price}}</td>
+                        <td>{{produkt.amount - produkt.amountOfOrder}}</td>
+                        <td>
+                           <input type="number" name="input" ng-model="produkt.amountOfOrder" min="0" ng-maxlength="10" placeholder="ilość"  > </td>
+                        <td>
+                           <button ng-click="addToBasket(produkt)" class="btn btn-success btn-xs">+</button>
+                           
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+   <script src="js/angular.min.js"></script>
+   <script src="js/application.js"></script>
+   <script src="js/controllers/basketController.js"></script>
+   <script src="js/jquery-1.11.2.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   
+</body>
+
+</html>

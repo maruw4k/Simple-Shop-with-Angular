@@ -1,0 +1,151 @@
+[
+
+	
+	{
+    "id": 1, 
+	"name":"Kapusta",
+	"country":"Holandia",
+	"amount":63,
+    "price":12,
+    "amountOfOrder":0
+	},
+    {
+    "id": 2, 
+	"name":"Konopie siewne",
+	"country":"Polska",
+	"amount":100,
+    "price":26,
+    "amountOfOrder":0
+	},
+	{
+    "id": 3, 
+	"name":"Pomidory",
+	"country":"Włochy",
+	"amount":44,
+    "price":31,
+    "amountOfOrder":0
+	},
+	{
+    "id": 4, 
+	"name":"Ogórki",
+	"country":"Portugalia",
+	"amount":23,
+    "price":40,
+    "amountOfOrder":0
+	},
+	{
+    "id": 5, 
+	"name":"Selery",
+	"country":"Niemcy",
+	"amount":10,
+    "price":22,
+    "amountOfOrder":0
+	},
+	{
+    "id": 6, 
+	"name":"Rzodkiewki",
+	"country":"Belgia",
+	"amount":64,
+    "price":2,
+    "amountOfOrder":0
+	},
+	{
+    "id": 7, 
+	"name":"Gruszki",
+	"country":"Czechy",
+	"amount":69,
+    "price":7,
+    "amountOfOrder":0
+	},
+	{
+    "id": 8, 
+	"name":"Banany",
+	"country":"RPA",
+	"amount":89,
+    "price":8,
+    "amountOfOrder":0
+	},
+	{
+    "id": 9, 
+	"name":"Buraki",
+	"country":"Francja",
+	"amount":10,
+    "price":90,
+    "amountOfOrder":0
+	},
+   {
+    "id": 10, 
+	"name":"Śliwki",
+	"country":"Holandia",
+	"amount":200,
+    "price":90,
+    "amountOfOrder":0
+	},
+   {
+    "id": 11, 
+	"name":"Brokuły",
+	"country":"Belgia",
+	"amount":42,
+    "price":80,
+    "amountOfOrder":0
+	},
+   {
+    "id": 12, 
+	"name":"Wiśnie",
+	"country":"Japonia",
+	"amount":82,
+    "price":14,
+    "amountOfOrder":0
+	},
+   {
+    "id": 13, 
+	"name":"Ziemniaki",
+	"country": "Łotwa",
+	"amount":14,
+    "price":90,
+    "amountOfOrder":0
+	},
+   {
+    "id": 14, 
+	"name":"Szpinak",
+	"country":"Francja",
+	"amount":12,
+    "price":30,
+    "amountOfOrder":0
+	},
+    {
+    "id": 15, 
+	"name":"Kapusta Pekińska",
+	"country": "Pekin",
+	"amount":62,
+    "price":90,
+    "amountOfOrder":0
+	},
+    {
+    "id": 16, 
+	"name":"Pomarańcze",
+	"country": "RPA",
+	"amount":37,
+    "price":27,
+    "amountOfOrder":0
+	},
+    {
+    "id": 17, 
+	"name":"Kiwi",
+	"country": "Australia",
+	"amount":52,
+    "price":20,
+    "amountOfOrder":0
+	},
+    {
+    "id": 18, 
+	"name":"Melony",
+	"country": "Scarlett Johansson",
+	"amount":82,
+    "price":99,
+    "amountOfOrder":0
+	}
+   
+
+
+]

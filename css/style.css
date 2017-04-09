@@ -1,0 +1,24 @@
+body {
+   font-family: 'Roboto';
+   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc1MTQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIyMC4wODkyODU3MTQyODU3MTUlIj4KPHN0b3Agc3RvcC1jb2xvcj0iI0U2RUFGMCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0ZGRkZGRiIgb2Zmc2V0PSIxIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZzUxNCkiIC8+Cjwvc3ZnPg==);
+}
+
+.searchpage {
+   width: 250px;
+}
+
+.basket {
+   padding: 7px;
+   width: 70px;
+}
+
+.shoplogo {
+   width: 90px;
+}
+.center-block {
+   float: none;
+}
+
+.totalprice {
+   float: left;
+}
